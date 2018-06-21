@@ -9,11 +9,11 @@
 import React from 'react'
 import Aux from '../../hoc/Aux'
 import classes from './Layout.css'
+import Toolbar from '../Navigation/Toolbar/Toolbar'
 
 const layout = (props) => (
   <Aux>
-    {/* We will replace this div with 3 components */}
-    <div>Toolbar, SideDrawer, Backdrop</div>
+    <Toolbar />
 
     <main className={classes.Content}>
       {/* Here we want to output the component we wrap with this layout
