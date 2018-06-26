@@ -1,4 +1,9 @@
-/* Mobile-first styling */
+/* --------------------------------------------------- */
+
+/*         Styling for Larger Screens
+
+/* --------------------------------------------------- */
+
 .Toolbar {
   height: 56px;
   width: 100%;
@@ -6,24 +11,32 @@
   top: 0;
   left: 0;
   background-color: #703b09;
-
-  /* Flex display is a helpful display; auto is horizontal row even if block */
-  display: flex;
-
-  /* This means take up the entire space with elements but put space between */
-
-  /* justify-content is a special flex style */
-  justify-content: space-between;
-
-  /* align-items refers to vertical alignment; special flex style */
-  align-items: center;
+  display: flex; /* Flex display is a helpful display; auto is horizontal row
+  even if block; This means take up the entire space with elements but put
+  space between */
+  justify-content: space-between; /* justify-content is a special flex style */
+  align-items: center; /* align-items refers to vertical alignment; special flex style */
   padding: 0 20px;
   box-sizing: border-box;
-
-  /* Number has to be lower than Z index of the backdrop, which was 100 */
-  z-index: 90;
+  z-index: 90; /* Number has to be lower than Z index of the backdrop, which was 100 */
 }
 
 .Toolbar nav {
   height: 100%;
+}
+
+.Logo {
+  height: 80%;
+}
+
+/* ------------------------------------------------------------ */
+
+/*         Styling for Smaller Screens & Side Drawer Display
+
+/* ------------------------------------------------------------ */
+
+@media (max-width: 499px) {
+  .DesktopOnly {
+    display: none;
+  }
 }

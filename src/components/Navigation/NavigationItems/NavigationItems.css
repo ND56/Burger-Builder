@@ -1,0 +1,27 @@
+/* --------------------------------------------------- */
+
+/*         Styling for Small Screens: Default
+
+/* --------------------------------------------------- */
+
+.NavigationItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column; /* make sure on top of each other */
+  align-items: center;
+  height: 100%;
+}
+
+/* --------------------------------------------------- */
+
+/*         Styling for Larger Screens
+
+/* --------------------------------------------------- */
+
+@media (min-width: 500px) {
+  .NavigationItems {
+    flex-flow: row; /* make sure next to each other */
+  }
+}
